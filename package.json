@@ -1,0 +1,28 @@
+{
+  "name": "qsmysql",
+  "version": "0.0.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/emanueldev1/qsmysql.git"
+  },
+  "bugs": "https://github.com/emanueldev1/qsmysql/issues",
+  "author": "emanueldev1",
+  "license": "LGPL-3.0-or-later",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@citizenfx/server": "2.0.14862-1",
+    "mysql2": "3.14.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.21",
+    "esbuild": "^0.25.4",
+    "typescript": "^5.8.3"
+  },
+  "keywords": [],
+  "packageManager": "pnpm@10.11.0"
+}
