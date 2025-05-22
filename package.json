@@ -12,7 +12,10 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "pnpm build:game && pnpm --filter ./web run build",
+    "build:game": "node build.js",
+    "watch": "concurrently \"pnpm watch:game\" \"pnpm --filter ./web run watch\"",
+    "watch:game": "esbuild --watch --bundle --platform=node --target=node16.9.1 src/index.js --outfile=build/index.js"
   },
   "dependencies": {
     "@citizenfx/server": "2.0.14862-1",
@@ -20,6 +23,7 @@
   },
   "devDependencies": {
     "@types/node": "^22.15.21",
+    "concurrently": "^9.1.2",
     "esbuild": "^0.25.4",
     "typescript": "^5.8.3"
   },

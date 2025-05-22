@@ -128,5 +128,7 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
-
-temp
+fxmanifest.lua
+.yarn.*
+*_temp
+build
