@@ -132,3 +132,4 @@ fxmanifest.lua
 .yarn.*
 *_temp
 build
+.DS_Store

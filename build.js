@@ -54,6 +54,7 @@ const CONFIG = {
                     { key: 'game', value: 'common' },
                     { key: 'use_experimental_fxv2_oal', value: 'yes' },
                     { key: 'lua54', value: 'yes' },
+                    { key: 'node_version', value: '22' },
                 ],
             },
             {
