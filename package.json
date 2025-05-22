@@ -14,7 +14,7 @@
   "scripts": {
     "build": "pnpm build:game && pnpm --filter ./web run build",
     "build:game": "node build.js",
-    "watch": "concurrently \"pnpm watch:game\" \"pnpm --filter ./web run watch\"",
+    "watch": "concurrently \"pnpm watch:game\" \"pnpm --filter ./web run watch\" \"pnpm --filter ./web run dev\"",
     "watch:game": "esbuild --watch --bundle --platform=node --target=node16.9.1 src/index.js --outfile=build/index.js"
   },
   "dependencies": {
